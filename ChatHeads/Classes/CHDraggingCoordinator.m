@@ -378,4 +378,12 @@ typedef enum {
     }];
 }
 
+- (void)updatePresentedViewControllerPosition
+{
+    [UIView animateWithDuration:0.3 animations:^{
+        CGRect rect = [self _navigationControllerFrame];
+        _presentedNavigationController.view.frame = rect;
+    }];
+}
+
 @end

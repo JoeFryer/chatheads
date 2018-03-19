@@ -14,6 +14,7 @@
 @property (nonatomic, weak) id<CHDraggableViewDelegate> delegate;
 
 - (void)snapViewCenterToPoint:(CGPoint)point edge:(CGRectEdge)edge;
+- (void)endUpTouch;
 
 @end
 
